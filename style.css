@@ -1,0 +1,333 @@
+/* ОБЩИЕ */
+
+body {
+    background: #f4f4f4;
+}
+
+p {
+	font-size: 30px;
+}
+
+/*для IE*/
+@font-face {
+	font-family: OpenSans; /* имя шрифта для CSS правил */
+	src: url(../fonts/OpenSans-Light.eot); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+/*для других браузеров*/
+@font-face {
+	font-family: OpenSans; /* имя шрифта для CSS правил */
+	src: url(../fonts/OpenSans-Light.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input, select, textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    display: none;
+}
+
+h1, h2 {
+    text-align: center;   
+}
+
+h2 {
+    font: 18px OpenSans;
+}
+
+.main {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+    border-top: 1px solid #e1e0e0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+}
+
+.team-member {
+	margin: 0 auto;
+}
+
+.team-member img {
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.clients a {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.clients img {
+	width: 200px;
+	margin: 0 auto;
+}
+
+h1 sub {
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 0;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* HEADER */
+header {
+    background: #272829;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+.header-grid-container {
+    display: grid;
+    grid-template-columns: 70px auto 150px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-areas: "logo subwrapper contacts";
+}
+
+header span {
+    color: white;
+}
+
+.home, .sales, .job, .shop, .register, .about, .places {
+    color: #4aaa49;
+    font:  14px OpenSans;
+    text-transform: uppercase;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.logo {
+    grid-area: logo;
+    text-align: right;
+}
+
+.logo img {
+    width: 70px;
+    vertical-align: top;
+}
+
+.subwrapper {
+    grid-area: subwrapper;
+    margin-left: 10px;
+}
+
+.main-menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.main-menu li {
+    display: inline;
+    color: #4aaa49;
+    text-transform: uppercase;
+}
+
+.controls {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.controls span, .controls .search
+{
+    font: 14px OpenSans;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.contacts a, .contacts p {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    font: 14px OpenSans;
+}
+
+.contacts a:hover {
+    text-decoration: none;
+}
+
+.submenu li {
+    display: inline;
+    color: white;
+}
+
+.submenu a {
+    color: white;
+    font: 14px OpenSans;
+}
+
+.submenu a:hover {
+    text-decoration: none;
+}
+
+.pi_text_more {
+    display: inline-block;
+    border-bottom: 1px dotted #428bca;
+}
+
+.pi_text_more:hover {
+    text-decoration: none;
+}
+
+
+
+/* FOOTER */
+footer {
+    background: #272829;
+    padding: 50px 0 50px 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font: 14px OpenSans;
+}
+
+
+
+/* ГЛАВНАЯ */
+.advantages, .advantage {
+    font: 18px OpenSans !important;
+}
+
+.advantages {
+    padding: 0 10px 0 10px;
+}
+
+.advantage {
+    margin-bottom: 10px;
+}
+
+.greeting {
+    display: block;
+    text-align: center;
+}
+
+.main-icon {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.section-description {
+    height: 250px;
+    padding: 10px 0 30px 0;
+    background: white;
+}
+
+.section-description a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-description h2 {
+    font-size: 20px;
+}
+
+.section-description ul {
+    font: 18px OpenSans !important;
+    list-style-type: none;
+    padding: 0px 20px 0px 20px;
+}
+
+.section-link {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-link-title {
+    width: 200px;
+}
+
+/* ТЕХНОЛОГИИ */
+.technologies a {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.technologies img {
+	width: 150px;
+	margin: 0 auto;
+}
+
+/* АДАПТИВ */
+/*
+@media (max-width: 950px) {
+    .header-grid-container {
+        grid-template-columns: auto;
+        grid-template-areas: "logo contacts" "subwrapper subwrapper";
+    }
+
+    .subwrapper {
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 10px 10px 0;
+    }
+
+    .search-text {
+        margin-top: 10px;
+    }
+
+    menu {
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}*/
+
+
+@media (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
