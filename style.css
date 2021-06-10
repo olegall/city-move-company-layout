@@ -1,52 +1,98 @@
-/* ОБЩИЕ */
-
-body {
-    background: #f4f4f4;
-}
-
-p {
-	font-size: 30px;
-}
-
 /*для IE*/
-@font-face {
-	font-family: OpenSans; /* имя шрифта для CSS правил */
-	src: url(../fonts/OpenSans-Light.eot); /* если шрифт не установлен, тогда загружаем его по указанному пути */
-}
+/*@font-face {
+	font-family: OpenSans;
+	src: url(fonts/OpenSans-Light.eot);
+}*/
 /*для других браузеров*/
 @font-face {
 	font-family: OpenSans; /* имя шрифта для CSS правил */
-	src: url(../fonts/OpenSans-Light.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
-}
-
-/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input, select, textarea {
-    max-width: 280px;
-}
-
-.navbar {
-    display: none;
+	src: url(fonts/OpenSans-Regular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
 
 h1, h2 {
     text-align: center;   
 }
 
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 34px;
+	margin: 0;
+}
+
 h2 {
-    font: 18px OpenSans;
+    font: 20px OpenSans;
+	text-align: center;
+	font-size: 20px;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+.to-site-link {
+	margin-bottom: 5px !important;
+}
+
+/* Главная */
+.main-p {
+	font-size: 28px;
+}
+
+.main-p:first-child {
+	margin-top: 30px;
+}
+
+p, .back {
+    font-size: 18px;
+    font-family: OpenSans;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input, select, textarea {
+    max-width: 280px;
+}
+
+.you {
+	display: block !important;
+	text-align: center;
+}
+
+
+/* ОПИСАНИЕ */
+.bottom-delimiter {
+	height: 3px;
+	background: #e6e6e6;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.bottom-menu {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.team-description-grid-container {
+    display: grid;
+    grid-template-columns: 33.33333% 33.33333% 33.33333%;
+}
+
+.release span, .team span {
+	font-weight: bold;
+}
+
+.team {
+	margin-bottom: 40px;
+}
+
+
+
+.navbar {
+    display: none;
 }
 
 .main {
@@ -54,25 +100,48 @@ h2 {
     margin: 0 auto;
 }
 
-hr {
-    margin: 10px 0 10px 0;
-    border-top: 1px solid #e1e0e0;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
 }
 
-.team-member {
-	margin: 0 auto;
+.team-grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
-.team-member img {
+
+.item {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	
+}
+
+.item img {
 	width: 200px;
 	display: block;
 	margin: 0 auto;
 }
+
+.item a {
+	height: 200px;
+	display: flex;
+    align-items: center;
+}
+
+.team-item a {
+	height: 30px;
+}
+
+.team-item img {
+	width: 135px;
+}
+
+.team-item p {
+	text-align: center;
+}
+
+
 
 .clients a {
 	display: block;
@@ -89,19 +158,28 @@ h1 sub {
     font-size: 16px;
 }
 
-hr {
-    margin-top: 0;
+.vertical-space {
+	padding: 30px 0 30px 0;
 }
 
-h1 {
-	font-weight: bold;
+.center-horizontally {
+	display: block;
+	margin: 0 auto;
+}
+
+.center-link {
+	width: 325px;
 	text-align: center;
-	font-size: 30px;
+    display: block;
+    margin: 0 auto;	
 }
 
-/* HEADER */
 header {
     background: #272829;
+}
+
+header span {
+    color: white;
 }
 
 .wrapper {
@@ -119,9 +197,7 @@ header {
     grid-template-areas: "logo subwrapper contacts";
 }
 
-header span {
-    color: white;
-}
+
 
 .home, .sales, .job, .shop, .register, .about, .places {
     color: #4aaa49;
@@ -141,13 +217,13 @@ menu {
 }
 
 .logo img {
-    width: 70px;
+    width: 80px;
     vertical-align: top;
 }
 
 .subwrapper {
     grid-area: subwrapper;
-    margin-left: 10px;
+    margin: 15px 0 0 10px;
 }
 
 .main-menu a:hover {
@@ -211,17 +287,7 @@ menu {
 
 
 
-/* FOOTER */
-footer {
-    background: #272829;
-    padding: 50px 0 50px 0;
-}
 
-footer p {
-    text-align: center;
-    color: white;
-    font: 14px OpenSans;
-}
 
 
 
@@ -238,7 +304,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-.greeting {
+.center {
     display: block;
     text-align: center;
 }
@@ -290,6 +356,18 @@ footer p {
 .technologies img {
 	width: 150px;
 	margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background: #272829;
+    padding: 30px 0 30px 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font: 14px OpenSans;
 }
 
 /* АДАПТИВ */
